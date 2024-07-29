@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://pets-v2.dev-apis.com';
+const API_URL = 'https://pets-v2.dev-apis.com';
 
 export const fetchPets = async (page, animalType) => {
   // console.log(sortCriteria)
