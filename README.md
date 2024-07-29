@@ -1,35 +1,34 @@
 
-```markdown
 # Pets App
 
 ## Description
 
-The Pets App is a web application designed to help users find and browse pets available for adoption. Built using React, this app features searching, filtering, and sorting capabilities to help users find the perfect pet. The app utilizes a RESTful API to fetch pet data and supports various functionalities including pagination, sorting, and dynamic searching.
+Welcome to the **Pets App**! This web application is designed to assist users in finding and browsing pets available for adoption. Built with **React**, the app provides a seamless experience for searching, filtering, and sorting pet listings. It integrates with a RESTful API to fetch pet data and supports various features, including pagination and dynamic searching.
 
 ## Features
 
-- **Search Pets**: Search for pets by animal type, location, and breed.
-- **Filter Pets**: Filter pets by criteria like animal type.
-- **Sort Pets**: Sort the list of pets by name or city.
-- **Pagination**: Navigate through different pages of pet listings.
-- **Error Handling**: Display user-friendly error messages using Toast notifications.
+- **Search Pets**: Find pets based on animal type, location, and breed.
+- **Filter Pets**: Narrow down your search by selecting specific animal types.
+- **Sort Pets**: Organize the pet list by name or city for easier browsing.
+- **Pagination**: Move through different pages of pet listings effortlessly.
+- **Error Handling**: Receive user-friendly error messages with **Toast notifications**.
 
 ## Technologies
 
 - **Frontend**: React, Tailwind CSS
-- **Backend**: The app interacts with a RESTful API (https://pets-v2.dev-apis.com) for data.
-- **State Management**: React hooks for managing state.
-- **Styling**: Tailwind CSS for responsive and modern UI design.
-- **Error Handling**: React Toastify for error notifications.
+- **Backend**: Interacts with a RESTful API ([https://pets-v2.dev-apis.com](https://pets-v2.dev-apis.com))
+- **State Management**: Utilizes React hooks for state management
+- **Styling**: Responsive and modern UI with Tailwind CSS
+- **Error Handling**: React Toastify for managing and displaying errors
 
 ## Installation
 
-To get started with the Pets App locally, follow these steps:
+To set up the Pets App locally, follow these instructions:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/pets-app.git
-   ```
+   git clone https://github.com/Mujeeb02/pets-app.git
+
 
 2. **Navigate to the project directory:**
    ```bash
