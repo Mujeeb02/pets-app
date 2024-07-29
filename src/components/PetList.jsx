@@ -1,3 +1,4 @@
+// src/components/PetList.js
 import React, { useEffect, useState } from 'react';
 import { fetchPets, searchPets } from '../services/api';
 import { Link } from 'react-router-dom';
@@ -23,7 +24,7 @@ const PetList = ({ searchParams }) => {
           data = await fetchPets(page, animalType);
         }
         setPets(data.pets);
-        setTotalPages((data.numberOfResults/(data.endIndex-data.startIndex+1))); // Example static total pages, should be dynamic based on API response
+        setTotalPages(Math.ceil(data.numberOfResults / (data.endIndex - data.startIndex + 1)));
       } catch (err) {
         toast.error(err.message);
       } finally {
@@ -81,7 +82,7 @@ const PetList = ({ searchParams }) => {
         </select>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-24">
-        {sortedPets && sortedPets().map(pet => (
+        {sortedPets().map(pet => (
           <Link to={`/pet/${pet.id}`} key={pet.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h2 className="text-2xl font-semibold text-gray-800 mb-2">{pet.name}</h2>
             <p className="text-gray-600 mb-4">{pet.description.slice(0, 100)}</p>

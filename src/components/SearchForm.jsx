@@ -1,3 +1,4 @@
+// src/components/SearchForm.js
 import React, { useState } from 'react';
 
 const SearchForm = ({ onSearch }) => {

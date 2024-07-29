@@ -1,3 +1,4 @@
+// src/pages/HomePage.js
 import React, { useState } from 'react';
 import PetList from '../components/PetList';
 import SearchForm from '../components/SearchForm';
@@ -5,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const [searchParams, setSearchParams] = useState({});
+
   const handleSearch = (params) => {
     setSearchParams(params);
   };
